@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_dashboard"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    android:background="@drawable/back"
+    tools:context=".DashboardActivity">
+
+
+    <EditText
+        android:id="@+id/et1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="52dp"
+        android:ems="10"
+        android:textColorHint="#ffffff"
+        android:textColor="#ffffff"
+        android:hint="Enter Name"
+        android:background="@drawable/rounded_red_border"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/et2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="124dp"
+        android:ems="10"
+        android:textColorHint="#ffffff"
+        android:textColor="#ffffff"
+        android:hint="Enter Phone Number"
+        android:background="@drawable/rounded_red_border"
+        android:inputType="phone" />
+
+    <EditText
+        android:id="@+id/et4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/rounded_red_border"
+        android:layout_alignParentBottom="true"
+        android:textColorHint="#ffffff"
+        android:textColor="#ffffff"
+
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="108dp"
+        android:ems="10"
+        android:hint="Enter Address"
+        android:inputType="textPostalAddress" />
+
+    <LinearLayout
+        android:id="@+id/linear_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="211dp"
+        android:orientation="vertical"
+        android:padding="10dip">
+
+        <!-- Text Label -->
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="33dp"
+            android:layout_marginTop="10dip"
+            android:layout_marginBottom="5dp"
+            android:textColorHint="#ffffff"
+            android:textColor="#ffffff"
+
+            android:text="Service" />
+
+        <!-- Spinner Element -->
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_red_border"
+            android:textColorHint="#ffffff"
+            android:textColor="#ffffff"
+            />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+android:background="@drawable/mybutton"
+        android:text="Register" />
+
+    <EditText
+        android:id="@+id/exp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linear_layout"
+        android:layout_marginTop="22dp"
+        android:ems="10"
+        android:textColorHint="#ffffff"
+        android:textColor="#ffffff"
+        android:hint="Enter Experience"
+        android:background="@drawable/rounded_red_border"
+        android:inputType="number" />
+
+</RelativeLayout>
